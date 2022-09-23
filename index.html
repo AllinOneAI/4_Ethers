@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">			
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASK2</title>
+    </head>
+    <body style="background-color:#fcffe3;">
+            <div style="text-align:center;">
+            <h1>IUAB Tokens Distribution machine</h1> 
+            <button id="connect" >Connect to MetaMask</button>
+            </div>
+            <br>
+            <br>
+            <h2 id="greeting" hidden>Hello, Mr.Owner!</h2>
+            <table>
+            	<tr>
+            		<th style="text-align:left;">Your address:</th>
+            		<th> <i id="addr"></i> </th>
+            	</tr>
+            	<tr>
+            		<th style="text-align:left;">Token balance: </th>
+            		<th> <i id="bal"></i> </th>
+            	</tr>
+            </table>
+            <br>
+
+            <h2>Distribute</h2>
+            <button id="add">Add one</button>
+            <button id="rm">Remove one</button>
+            <br> 
+            <br>
+
+            <div>
+                <input type="text" id="to" placeholder="Send to" style="height:25px; "></input> 
+                <input type="text" id="amount" placeholder="amount" style="height:25px; "></input>
+            </div>
+
+            <div style="display:inline-block">
+                
+
+            	<br>
+            	<button id="submit">Submit</button>
+        	</div>
+
+
+        <script src="https://unpkg.com/@metamask/detect-provider@1.2.0/dist/detect-provider.min.js" ></script>
+        <script src="scr/scr.js" type="module"></script>
+    </body>
+</html>
