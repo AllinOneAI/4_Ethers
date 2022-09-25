@@ -27,20 +27,20 @@
 
             <h2>Distribute</h2>
             <button id="add">Add one</button>
-            <button id="rm">Remove one</button>
+            <button id="rm" disabled>Remove one</button>
             <br> 
             <br>
 
-            <div>
-                <input type="text" id="to" placeholder="Send to" style="height:25px; "></input> 
-                <input type="text" id="amount" placeholder="amount" style="height:25px; "></input>
+            <div id="inputs">
+                <div style="margin-top:5px" >
+                    <input class="inputAd" type="text" placeholder="Send to" pattern="^0x[a-fA-F0-9]{40}$" style="height:25px; "></input>
+                    <input class="inputAm" type="text" placeholder="amount" pattern="^[0-9]+(\.[0-9]+)?$" style="height:25px; "></input>
+                </div>
             </div>
-
-            <div style="display:inline-block">
-                
-
+            <br>
+            <div style="display:inline-block;">
             	<br>
-            	<button id="submit">Submit</button>
+            	<button id="submit" style="text-align:center;" >Оплатити таксі Opel Astra G</button>
         	</div>
 
 
